@@ -65,9 +65,7 @@ module.exports = {
     }
     else if (subcommand === 'support') {
         const supportServerLink = lang.supportServerLink;
-        const githubLink = lang.githubLink;
-        const replitLink = lang.replitLink;
-        const youtubeLink = lang.youtubeLink;
+       
 
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
@@ -80,10 +78,7 @@ module.exports = {
                 ➡️ **${lang.supportDescriptionTitle}:**
                 - ${lang.discord} - ${supportServerLink}
                 
-                ➡️ **${lang.followUsOn}:**
-                - ${lang.github} - ${githubLink}
-                - ${lang.replit} - ${replitLink}
-                - ${lang.youtube} - ${youtubeLink}
+
             `)
             .setImage(lang.supportImageURL)
             .setTimestamp();
@@ -95,14 +90,14 @@ module.exports = {
       const adminPermissions = 8; 
       
      
-      const inviteURL = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=${adminPermissions}&integration_type=0&scope=bot`;
+      const inviteURL = `https://discord.com/oauth2/authorize?client_id=1354824854838186194&permissions=8&integration_type=0&scope=bot+applications.commands`;
       
       const embed = new EmbedBuilder()
         .setColor('#0099ff')
         .setAuthor({ 
           name: lang.inviteTitle, 
           iconURL: cmdIcons.rippleIcon,
-          url: "https://discord.gg/xQF9f9yUEM" 
+          url: "https://discord.gg/28RCr2yrwS" 
         })
         .setDescription(lang.inviteDescription.replace('{inviteURL}', inviteURL))
         .setTimestamp();
